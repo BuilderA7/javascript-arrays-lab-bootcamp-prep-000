@@ -20,8 +20,8 @@ function destructivelyRemoveFirstKitten() {
    return kittens;
 }
 function appendKitten(name) {
-  window.kittens = [...kittens, window.name];
-  return kittens
+  var newarray = [...kittens, window.name];
+  return newarray
 }
 function prependKitten(name) {
   window.kittens = [window.name,...kittens];
