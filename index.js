@@ -25,8 +25,10 @@ function appendKitten(name) {
   return newarray
 }
 function prependKitten(name) {
-  window.kittens = [name,...kittens];
-  return kittens;
+  
+  var newarray = window.kittens
+  newarray = [name,...kittens];
+  return newarray;
 }
 function removeLastKitten() {
   return window.kittens.slice(0, kittens.length - 1)
