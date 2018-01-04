@@ -20,11 +20,11 @@ function destructivelyRemoveFirstKitten() {
    return kittens;
 }
 function appendKitten(name) {
-  var newarray = [...kittens, window.name];
+  var newarray = [...kittens, name];
   return newarray
 }
 function prependKitten(name) {
-  window.kittens = [window.name,...kittens];
+  window.kittens = [name,...kittens];
   return kittens;
 }
 function removeLastKitten() {
